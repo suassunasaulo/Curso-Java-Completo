@@ -1,0 +1,16 @@
+A classe Locale do pacote java.util é usada para definir configurações regionais no Java, como formato de números, datas e moedas.
+Isso é útil, por exemplo, quando você quer garantir que os números sejam exibidos com ponto ou com vírgula no separador decimal.
+
+Importação
+import java.util.Locale;
+
+Exemplo básico
+import java.util.Locale;
+
+public class Main {
+    public static void main(String[] args) {
+        double valor = 1234.56;
+
+        // Configura para usar o padrão dos EUA (ponto como separador decimal)
+        Locale.setDefault(Locale.US);
+        System.out.printf("Valor com Locale US: %.2f%n", valor);

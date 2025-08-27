@@ -1,0 +1,21 @@
+switch (expressao) {
+    case valor1:
+        // bloco de código
+        break;
+    case valor2:
+        // bloco de código
+        break;
+    ...
+    default:
+        // bloco de código caso nenhum case seja atendido
+}
+
+Regras importantes
+
+expressao: geralmente é um int, char, String ou enum.
+
+case: representa um valor possível para a expressão.
+
+break: usado para sair do switch após executar o código do case.
+
+default: é opcional e executa se nenhum case corresponder.

@@ -1,0 +1,51 @@
+O printf (print formatted) é usado para exibir valores formatados no console. Ele funciona parecido com o printf da linguagem C.
+
+Sintaxe básica
+System.out.printf(formato, argumentos);
+
+Especificadores de formato mais comuns
+
+Especificador	    Significado	                    Exemplo	               Saída
+%d	          Número inteiro	               %d	                 10
+%f	          Número decimal	              %.2f	               10.55
+%s	             String	                        %s	              Saulo
+%n	         Quebra de linha                        —	                 —
+%c	            Caractere	                       %c	                 A
+%b	            Booleano	                       %b	                true
+
+
+
+Exemplo prático
+
+import java.util.Locale;
+
+public class Main {
+    public static void main(String[] args) {
+        String nome = "João";
+        int idade = 20;
+        double salario = 1710.5;
+
+        Locale.setDefault(Locale.US);
+
+        System.out.printf("Nome: %s%n", nome);
+        System.out.printf("Idade: %d anos%n", idade);
+        System.out.printf("Salário: %.2f%n", salario);
+    }
+}
+
+Saída:
+
+Saída com Locale.US:
+
+Nome: João
+Idade: 20 anos
+Salário: 1710.50
+
+
+Exemplo com múltiplos argumentos
+System.out.printf("O %s tem %d anos e ganha R$ %.2f%n", nome, idade, salario);
+
+
+Saída:
+
+O João tem 20 anos e ganha R$ 1710.50

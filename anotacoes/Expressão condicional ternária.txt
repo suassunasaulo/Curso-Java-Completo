@@ -1,0 +1,5 @@
+O operador ternário é uma forma resumida de escrever um if-else simples.
+Ele retorna um valor com base em uma condição.
+
+Sintaxe
+variavel = (condicao) ? valorSeVerdadeiro : valorSeFalso;
