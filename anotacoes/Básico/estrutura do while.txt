@@ -1,0 +1,4 @@
+while ( condição ) {
+comando 1
+comando 2
+}
